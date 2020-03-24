@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="baseUtil.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="TravelAgentModule(failed)">
+    <classes>
+      <class name="testScripts.TravelAgentLoginTest">
+        <methods>
+          <include name="TravelAgentInvalidLoginTest"/>
+          <include name="TravelAgencyTitleTest"/>
+          <include name="AppLaunch"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testScripts.TravelAgentLoginTest -->
+    </classes>
+  </test> <!-- TravelAgentModule(failed) -->
+</suite> <!-- Failed suite [Suite] -->

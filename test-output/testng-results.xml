@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48414" started-at="2020-03-23T17:42:29 IST" finished-at="2020-03-23T17:43:17 IST">
+    <groups>
+    </groups>
+    <test name="BookModule" duration-ms="21832" started-at="2020-03-23T17:42:29 IST" finished-at="2020-03-23T17:42:50 IST">
+      <class name="testScripts.BookModuleTest">
+        <test-method status="PASS" signature="AppLaunch()[pri:0, instance:testScripts.BookModuleTest@59e5ddf]" name="AppLaunch" is-config="true" duration-ms="15017" started-at="2020-03-23T17:42:29 IST" finished-at="2020-03-23T17:42:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="PASS" signature="SearchResultMessageTest()[pri:0, instance:testScripts.BookModuleTest@59e5ddf]" name="SearchResultMessageTest" duration-ms="5340" started-at="2020-03-23T17:42:44 IST" finished-at="2020-03-23T17:42:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchResultMessageTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:testScripts.BookModuleTest@59e5ddf]" name="TearDown" is-config="true" duration-ms="1362" started-at="2020-03-23T17:42:49 IST" finished-at="2020-03-23T17:42:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testScripts.BookModuleTest -->
+    </test> <!-- BookModule -->
+    <test name="TravelAgentModule" duration-ms="26146" started-at="2020-03-23T17:42:51 IST" finished-at="2020-03-23T17:43:17 IST">
+      <class name="testScripts.TravelAgentLoginTest">
+        <test-method status="PASS" signature="AppLaunch()[pri:0, instance:testScripts.TravelAgentLoginTest@7e2d773b]" name="AppLaunch" is-config="true" duration-ms="15878" started-at="2020-03-23T17:42:51 IST" finished-at="2020-03-23T17:43:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="PASS" signature="TravelAgentInvalidLoginTest()[pri:0, instance:testScripts.TravelAgentLoginTest@7e2d773b]" name="TravelAgentInvalidLoginTest" duration-ms="9001" started-at="2020-03-23T17:43:07 IST" finished-at="2020-03-23T17:43:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TravelAgentInvalidLoginTest -->
+        <test-method status="FAIL" signature="TravelAgencyTitleTest()[pri:0, instance:testScripts.TravelAgentLoginTest@7e2d773b]" name="TravelAgencyTitleTest" duration-ms="75" started-at="2020-03-23T17:43:16 IST" depends-on-methods="testScripts.TravelAgentLoginTest.TravelAgentInvalidLoginTest" finished-at="2020-03-23T17:43:16 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [TRAVEL AGENT SIGNIN] but found [TRAVEL AGENT LOGIN]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [TRAVEL AGENT SIGNIN] but found [TRAVEL AGENT LOGIN]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at testScripts.TravelAgentLoginTest.TravelAgencyTitleTest(TravelAgentLoginTest.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TravelAgencyTitleTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:testScripts.TravelAgentLoginTest@7e2d773b]" name="TearDown" is-config="true" duration-ms="1031" started-at="2020-03-23T17:43:16 IST" finished-at="2020-03-23T17:43:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testScripts.TravelAgentLoginTest -->
+    </test> <!-- TravelAgentModule -->
+  </suite> <!-- Suite -->
+</testng-results>
